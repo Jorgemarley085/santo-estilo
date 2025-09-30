@@ -9,7 +9,6 @@ async function main() {
   const nome = process.env.ADMIN_NAME || "Admin Master";
   const role = "admin";
 
-  // Verifica se o admin já existe
   const existingAdmin = await prisma.user.findUnique({ where: { email } });
   if (existingAdmin) {
     console.log("Admin já existe:", existingAdmin.email);
