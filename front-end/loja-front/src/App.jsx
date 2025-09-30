@@ -25,7 +25,7 @@ export default function App() {
     <>
       <Navbar goToView={setView} />
       {renderView()}
-      <Toaster position="top-right" reverseOrder={false} />
+      <Toaster position="top-center" reverseOrder={false} />
     </>
   );
 }
